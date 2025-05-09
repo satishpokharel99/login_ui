@@ -17,22 +17,15 @@ class _LoginUiState extends State<LoginUi> {
         child: Scaffold(
           body: Stack(
             children: [
-              // Container(
-              //   decoration: BoxDecoration(
-              //     image: DecorationImage(
-              //       image: AssetImage('assets/images/background.jpg'),
-              //       fit: BoxFit.cover,
-              //     ),
-              //   ),
-              // ),
-              Positioned.fill(
-                child: Image.asset(
-                  "/assets/images/background.jpg",
-                  fit: BoxFit.cover,
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/background.jpg'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-
-              Positioned.fill(
+              Positioned(
                 top: 120,
                 left: 90,
                 child: Column(
