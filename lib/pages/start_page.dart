@@ -58,7 +58,9 @@ class StartPage extends StatelessWidget {
                     SizedBox(
                       width: double.maxFinite,
                       child: OutlinedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/signup');
+                        },
                         child: Text(
                           "Sign Up",
                           style: TextStyle(color: Colors.black),
